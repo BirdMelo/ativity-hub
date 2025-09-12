@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap');
+
+/* STYLE ROOT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg_body: #EAEDF1;
+    --color_container: #42154E;
+    --color_highlight: #BF0087;
+    --color_text: black;
+    --color_text2: white;
+    --font_text: "TASA Explorer", sans-serif;
+    --font_title: "Bebas Neue", sans-serif;
+}
+body {
+    background-color: var(--bg_body);
+    font-family: var(--font_text);
+}
+
+/* STYLE HEADER */
+header {
+    background-color: var(--color_container);
+    padding: 8px 0;
+}
+h1 {
+    font-family: var(--font_title);
+    color: var(--color_text2);
+    text-align: center;
+}
+
+/* STYLE MAIN */
+section {
+    margin: 24px 34px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-content: center;
+}
+article {
+    border: var(--color_highlight) solid 2px;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: var(--color_container);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+article p {
+    font-weight: bold;
+    color: var(--color_text2);
+}
+article a {
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 16px;
+    font-weight: bold;
+    color: var(--color_container);
+}
+article a:hover {
+    background-color: var(--color_container);
+    color: var(--bg_body);
+    outline: solid var(--color_highlight) 2px;
+    border-radius: 16px;
+}
+
+/* STYLE FOOTER */
+footer {
+    background-color: var(--color_container);
+    padding: 16px;
+    border-radius: 16px;
+    color: var(--color_text2);
+    padding-right: 60px;
+
+    position: fixed;
+    bottom: 4px;
+    right: 0;
+    left: 0;
+    width: 95%;
+    margin: auto;
+}
+footer img {
+    width: 55px;
+    position: absolute;
+    bottom: 8px;
+    right: 9px;
+}
