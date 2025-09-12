@@ -19,6 +19,7 @@
 body {
     background-color: var(--bg_body);
     font-family: var(--font_text);
+    padding-bottom: 50px;
 }
 
 /* STYLE HEADER */
@@ -54,6 +55,11 @@ article p {
     font-weight: bold;
     color: var(--color_text2);
 }
+article img {
+    width: 500px;
+    border-radius: 16px;
+    border: solid 2px var(--color_highlight);
+}
 article a {
     text-decoration: none;
     text-align: center;
@@ -78,7 +84,7 @@ footer {
     padding-right: 60px;
 
     position: fixed;
-    bottom: 4px;
+    bottom: 0px;
     right: 0;
     left: 0;
     width: 95%;
